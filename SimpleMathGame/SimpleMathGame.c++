@@ -20,7 +20,7 @@ char findOperator(Operators Input)
 		return '*';
 	}
 
-	return '&';
+	return ' ';
 }
 
 struct problem
