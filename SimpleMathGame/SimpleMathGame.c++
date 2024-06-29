@@ -83,6 +83,7 @@ float game_result::CorrectAnswers{};
 
 int main()
 {
+	// These are for chosing random numbers and operator
 	std::random_device rd;															// Create a random device
 	std::mt19937 RandomEngine(rd()); 												// Seed the random number engine with the random device
 	std::uniform_int_distribution<> RandomNumberGenerator(MIN_NUMBER, MAX_NUMBER);	// Define a distribution (uniform distribution in this case) range from MIN_NUMBER to MAX_NUMBER
