@@ -20,7 +20,7 @@ char findOperator(Operators Input)
 		return '*';
 	}
 
-	return ' ';
+	return '&';
 }
 
 struct problem
@@ -88,7 +88,7 @@ int main()
 	std::uniform_int_distribution<> RandomNumberGenerator(MIN_NUMBER, MAX_NUMBER);	// Define a distribution (uniform distribution in this case) range from MIN_NUMBER to MAX_NUMBER
 	std::uniform_int_distribution<> RandomOperatorGenerator(0, 2);
 
-
+	//This is where the game code starts
 	auto start = std::chrono::high_resolution_clock::now();
 
 	for (int i{ 0 }; i < NUMBER_OF_PROBLEMS; i++)
