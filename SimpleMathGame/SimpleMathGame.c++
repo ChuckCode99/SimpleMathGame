@@ -50,21 +50,21 @@ struct game_result
 
 		switch (A.Operator)
 		{
-		case PLUS:
-		{
-			CorrectAnswer = A.Operatees[0] + A.Operatees[1];
-			break;
-		}
-		case MINUS:
-		{
-			CorrectAnswer = A.Operatees[0] - A.Operatees[1];
-			break;
-		}
-		case MULTIPLY:
-		{
-			CorrectAnswer = A.Operatees[0] * A.Operatees[1];
-			break;
-		}
+			case PLUS:
+			{
+				CorrectAnswer = A.Operatees[0] + A.Operatees[1];
+				break;
+			}
+			case MINUS:
+			{
+				CorrectAnswer = A.Operatees[0] - A.Operatees[1];
+				break;
+			}
+			case MULTIPLY:
+			{
+				CorrectAnswer = A.Operatees[0] * A.Operatees[1];
+				break;
+			}
 		}
 
 		if (Answer == CorrectAnswer)
